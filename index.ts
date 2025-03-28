@@ -115,7 +115,7 @@ const Graph = (
     plot.style.height = "100%"
 
     return plot
-})()}</graph>
+})()}<h2 class="font(32)">title</h2></graph>
 `
 
 const refresh = (a = 0.00015, b = 0.1) => render(html`
@@ -123,8 +123,9 @@ const refresh = (a = 0.00015, b = 0.1) => render(html`
     hbox(center) wrap
     gap(20)
     p(20)
+    line-height(0.9)
 ">
-    <h1 class="w(100%) 700 font(64) line-height(0.9)">prob-dist</h1>
+    <h1 class="w(100%) 700 font(64)">prob-dist</h1>
     ${Graph(a, b, refresh)}
     ${Graph(a, b, refresh)}
 </app>
